@@ -188,6 +188,7 @@ enum PeerInfoSettingsSection {
     case premiumManagement
     case stars
     case ton
+    case amneziamods
 }
 
 enum PeerInfoReportType {
@@ -7552,3 +7553,4 @@ struct ClearPeerHistory {
         }
     }
 }
+

@@ -249,6 +249,10 @@ func settingsItems(data: PeerInfoScreenData?, context: AccountContext, presentat
         interaction.openSettings(.language)
     }))
     
+    items[.advanced]!.append(PeerInfoScreenDisclosureItem(id: 88, text: "Amnezia mogged", icon: PresentationResourcesSettings.security, action: {
+        interaction.openSettings(.amneziamods)
+    }))
+
     let premiumConfiguration = PremiumConfiguration.with(appConfiguration: context.currentAppConfiguration.with { $0 })
     let isPremiumDisabled = premiumConfiguration.isPremiumDisabled
     if !isPremiumDisabled || context.isPremium {
