@@ -275,7 +275,7 @@ extension PeerInfoScreenNode {
             guard let controller = self.controller else {
                 return
             } 
-            let alertController = textAlertController(context: self.contentm title: nil, text: "Sup from AmneziaClient", actions: [TextAlertAction(type: .defaultAction, title: "OK", action:  {})])
+            let alertController = textAlertController(context: self.context, title: nil, text: "Sup from AmneziaClient", actions: [TextAlertAction(type: .defaultAction, title: "OK", action: {})])
             controller.present(alertController, in: .window(.root))
         case .businessSetup:
             guard let controller = self.controller, !controller.presentAccountFrozenInfoIfNeeded() else {
