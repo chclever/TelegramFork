@@ -19,6 +19,7 @@ swift_library(
         "//submodules/ItemListUI:ItemListUI",
         "//submodules/PresentationDataUtils:PresentationDataUtils",
         "//submodules/PasswordSetupUI:PasswordSetupUI",
+        "//submodules/UIKitRuntimeUtils:UIKitRuntimeUtils",
         "//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit",
         "//submodules/AppBundle:AppBundle",
         "//submodules/TelegramStringFormatting:TelegramStringFormatting",
@@ -31,7 +32,6 @@ swift_library(
         "//submodules/PhoneNumberFormat:PhoneNumberFormat",
         "//submodules/LocalizedPeerData:LocalizedPeerData",
         "//submodules/MergeLists:MergeLists",
-        "//submodules/TelegramUI/Utils/GIF:GIF",
     ],
     visibility = [
         "//visibility:public",
