@@ -272,12 +272,11 @@ extension PeerInfoScreenNode {
         case .powerSaving:
             push(energySavingSettingsScreen(context: self.context))
         case .amneziamods:
-            // guard let controller = self.controller else {
-            //     return
-            // } 
-            // let alertController = textAlertController(context: self.context, title: nil, text: "Sup from AmneziaClient", actions: [TextAlertAction(type: .defaultAction, title: "OK", action: {})])
-            // controller.present(alertController, in: .window(.root))
-            push(amneziaModsController(context: self.context))
+            guard let controller = self.controller else {
+                return
+            } 
+            let alertController = textAlertController(context: self.contentm title: nil, text: "Sup from AmneziaClient", actions: [TextAlertAction(type: .defaultAction, title: "OK", action:  {})])
+            controller.present(alertController, in: .window(.root))
         case .businessSetup:
             guard let controller = self.controller, !controller.presentAccountFrozenInfoIfNeeded() else {
                 return

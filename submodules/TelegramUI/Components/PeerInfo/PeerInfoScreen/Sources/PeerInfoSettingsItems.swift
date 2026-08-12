@@ -18,7 +18,6 @@ enum SettingsSection: Int, CaseIterable {
     case phone
     case accounts
     case myProfile
-    case amneziamods
     case proxy
     case apps
     case shortcuts
@@ -250,7 +249,7 @@ func settingsItems(data: PeerInfoScreenData?, context: AccountContext, presentat
         interaction.openSettings(.language)
     }))
     
-    items[.amneziamods]!.append(PeerInfoScreenDisclosureItem(id: 88, text: "Amnezia mogged", icon: PresentationResourcesSettings.amneziamods, action: {
+    items[.advanced]!.append(PeerInfoScreenDisclosureItem(id: 88, text: "Amnezia mogged", icon: PresentationResourcesSettings.security, action: {
         interaction.openSettings(.amneziamods)
     }))
 
